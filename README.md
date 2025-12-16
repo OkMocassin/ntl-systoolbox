@@ -16,3 +16,7 @@ MSPR1 Ali
 - feature/*:
   - created by developers
   - merged into develop via PR
+
+⚠️ Architecture freeze:
+Core structure, CLI entrypoint, config format and CheckResult contract are frozen.
+Any change must be validated by P1.
