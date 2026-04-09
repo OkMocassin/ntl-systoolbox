@@ -1,4 +1,0 @@
-rich
-PyYAML
-click
-psutil
