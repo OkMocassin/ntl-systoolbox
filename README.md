@@ -1,47 +1,57 @@
 # NTL System Toolbox
 
-**NTL-SysToolbox** est un utilitaire en ligne de commande (CLI) développé en Python 3.9+ conçu pour industrialiser l'exploitation de l'infrastructure de **Nord Transit Logistics (NTL)**. Il centralise le diagnostic des services, la sécurisation des sauvegardes métier et l'audit d'obsolescence du parc informatique.
+A comprehensive CLI utility for system diagnostics, backups, and obsolescence auditing.
 
-##  Fonctionnalités principales
+## Project Structure
 
-L'outil s'articule autour de trois modules indépendants:
+```
+ntlsystoolbox/
+├── core/               # Core utilities
+│   ├── config.py       # Configuration loading
+│   ├── logging_conf.py # Logging setup
+│   ├── io_utils.py     # TUI helpers (Rich/Questionary)
+│   └── models.py       # Data schemas (CheckResult)
+├── modules/            # Feature modules
+│   ├── diagnostic/     # Services & Health checks (Phase 2)
+│   ├── backup/         # Database backups (Phase 3)
+│   └── obsolescence/   # EOL & Audit (Phase 4)
+└── cli.py              # Main entry point
+```
 
-### **Module Diagnostic** : 
+### Architecture Overview
 
-Vérification des services Active Directory/DNS,
+```mermaid
+graph TD;
+    CLI[ntlsystoolbox.cli] --> |Loads config & UI| CoreUtils[core/]
+    CLI --> |Selects Option| MainMenu{Main Menu}
+    
+    MainMenu --> |Run Health Check| DiagMod[Diagnostic Module\npsutil, subprocess]
+    MainMenu --> |Run/Dry-run Backup| BackMod[Backup Module\nmysql.connector]
+    MainMenu --> |Start Network Scan| EOLMod[Obsolescence Module\npython-nmap]
+    
+    DiagMod --> Results[CheckResult List]
+    BackMod --> Results
+    EOLMod --> Results
+    
+    Results --> |Formatted by Rich| DisplayOut[Display Results]
+```
 
-Test de santé de la base MySQL du WMS
+## Installation
 
-Monitoring des ressources système (CPU, RAM, Disque).
+1. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # or venv\Scripts\activate on Windows
+   ```
 
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+## Usage
 
-### **Module Backup** : 
-
-Sauvegardes complètes via `mysqldump`,
-
-Export de tables en CSV 
-
-Gestion automatique de la rétention des fichiers.
-
-
-
-### **Module Audit** : 
-
-Scan réseau pour l'inventaire des composants, 
-
-Identification des systèmes d'exploitation 
-
-Rapport de conformité basé sur les dates de fin de vie (EOL).
-
-
-
-
-##  Prérequis
-
-**Systèmes d'exploitation** : Windows Server 2016+, Windows 10/11 ou Ubuntu 18.04+, Debian 10+, CentOS/RHEL 7+.
-
-**Langage** : Python 3.9 ou supérieur.
-
-
-
+Run the tool using:
+```bash
+python -m ntlsystoolbox.cli
+```
