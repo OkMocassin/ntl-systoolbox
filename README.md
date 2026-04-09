@@ -15,6 +15,7 @@ Test de santé de la base MySQL du WMS
 Monitoring des ressources système (CPU, RAM, Disque).
 
 
+
 ### **Module Backup** : 
 
 Sauvegardes complètes via `mysqldump`,
@@ -24,6 +25,7 @@ Export de tables en CSV
 Gestion automatique de la rétention des fichiers.
 
 
+
 ### **Module Audit** : 
 
 Scan réseau pour l'inventaire des composants, 
@@ -31,6 +33,9 @@ Scan réseau pour l'inventaire des composants,
 Identification des systèmes d'exploitation 
 
 Rapport de conformité basé sur les dates de fin de vie (EOL).
+
+
+
 
 ##  Prérequis
 
