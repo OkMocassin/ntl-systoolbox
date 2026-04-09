@@ -1,0 +1,42 @@
+# Environnement virtuel
+.venv/
+venv/
+env/
+source/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'environnement
+.env
+.env.*
+
+# Logs
+*.log
+
+# Backups
+backups_/
+*.csv
+
+# IDE
+.vscode/
+.idea/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# Tests
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
