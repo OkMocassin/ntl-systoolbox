@@ -40,7 +40,9 @@ Rapport de conformité basé sur les dates de fin de vie (EOL).
 ##  Prérequis
 
 **Systèmes d'exploitation** : Windows Server 2016+, Windows 10/11 ou Ubuntu 18.04+, Debian 10+, CentOS/RHEL 7+.
+
 **Langage** : Python 3.9 ou supérieur.
+
 * **Outils tiers** :
     **Nmap** (optionnel) : Recommandé pour la détection avancée des OS.
     **MySQL Client** : Requis pour les fonctions de sauvegarde.
