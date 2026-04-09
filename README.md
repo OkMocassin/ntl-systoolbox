@@ -6,7 +6,7 @@
 
 L'outil s'articule autour de trois modules indépendants:
 
-**Module Diagnostic** : 
+### **Module Diagnostic** : 
 
 Vérification des services Active Directory/DNS,
 
@@ -14,7 +14,7 @@ Test de santé de la base MySQL du WMS
 
 Monitoring des ressources système (CPU, RAM, Disque).
 
-**Module Backup** : 
+### **Module Backup** : 
 
 Sauvegardes complètes via `mysqldump`,
 
@@ -22,7 +22,7 @@ Export de tables en CSV
 
 Gestion automatique de la rétention des fichiers.
 
-**Module Audit** : 
+### **Module Audit** : 
 
 Scan réseau pour l'inventaire des composants, 
 
