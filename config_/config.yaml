@@ -1,0 +1,12 @@
+app_name: "NTL System Toolbox"
+version: "0.1.0"
+theme: "default"
+log_level: "INFO"
+
+db:
+  host: "localhost"
+  user: "root"
+  password_env: "DB_PASSWORD"
+
+backup_dir: "backups"
+retention_days: 30

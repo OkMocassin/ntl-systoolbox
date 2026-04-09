@@ -1,0 +1,32 @@
+checks:
+  ad_service_failure:
+    recommendation: "Restart the failed service immediately."
+    runbook: "docs/runbooks/RB-001-AD-Service-Restart.md"
+  
+  mysql_connection_error:
+    recommendation: "Check network connectivity and ensure MySQL service is running on the target host."
+    runbook: "docs/runbooks/RB-002-MySQL-Troubleshooting.md"
+    
+  os_disk_critical:
+    recommendation: "Free up disk space immediately. Check for old log files or backups."
+    runbook: "docs/runbooks/RB-003-Disk-Cleanup.md"
+
+  os_ram_critical:
+    recommendation: "Identify memory-hogging processes and consider restarting services."
+    runbook: "docs/runbooks/RB-004-Memory-Analysis.md"
+
+  backup_mysql_mysqldump_failed:
+    recommendation: "Install mysqldump or check credentials/permissions."
+    runbook: "docs/runbooks/RB-005-Backup-Failure.md"
+
+  backup_mysql_connection_error:
+    recommendation: "Ensure MySQL is running and credentials in config are correct."
+    runbook: "docs/runbooks/RB-002-MySQL-Troubleshooting.md"
+
+  eol_os_unsupported:
+    recommendation: "CRITICAL: This OS is End-of-Life. Plan immediate migration/upgrade."
+    runbook: "docs/runbooks/RB-010-OS-Upgrade-Guide.md"
+
+  eol_os_near_eol:
+    recommendation: "Plan upgrade soon. OS is approaching End-of-Life."
+    runbook: "docs/runbooks/RB-010-OS-Upgrade-Guide.md"
