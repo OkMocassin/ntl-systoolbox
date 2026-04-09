@@ -43,7 +43,5 @@ Rapport de conformité basé sur les dates de fin de vie (EOL).
 
 **Langage** : Python 3.9 ou supérieur.
 
-* **Outils tiers** :
-    **Nmap** (optionnel) : Recommandé pour la détection avancée des OS.
-    **MySQL Client** : Requis pour les fonctions de sauvegarde.
+
 
