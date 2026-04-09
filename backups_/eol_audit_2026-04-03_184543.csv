@@ -1,5 +1,0 @@
-ip,hostname,os,version,status,eol_date
-192.168.1.10,DC01,windows,server_2016,WARNING,2027-01-11
-192.168.1.11,WMS-DB,ubuntu,20.04,CRITICAL,2025-04-01
-192.168.1.12,LEGACY-APP,windows,server_2012,CRITICAL,2023-10-10
-192.168.1.50,DESKTOP-HR,windows,10,CRITICAL,2025-10-14
