@@ -4,17 +4,17 @@
 
 ##  Fonctionnalités principales
 
-L'outil s'articule autour de trois modules indépendants[cite: 65]:
+L'outil s'articule autour de trois modules indépendants:
 
-**Module Diagnostic** : Vérification des services Active Directory/DNS, test de santé de la base MySQL du WMS et monitoring des ressources système (CPU, RAM, Disque)[cite: 67, 68].
-**Module Backup** : Sauvegardes complètes via `mysqldump`, export de tables en CSV et gestion automatique de la rétention des fichiers[cite: 70, 71, 72].
-**Module Audit** : Scan réseau pour l'inventaire des composants, identification des systèmes d'exploitation et rapport de conformité basé sur les dates de fin de vie (EOL)[cite: 74, 77].
+**Module Diagnostic** : Vérification des services Active Directory/DNS, test de santé de la base MySQL du WMS et monitoring des ressources système (CPU, RAM, Disque).
+**Module Backup** : Sauvegardes complètes via `mysqldump`, export de tables en CSV et gestion automatique de la rétention des fichiers.
+**Module Audit** : Scan réseau pour l'inventaire des composants, identification des systèmes d'exploitation et rapport de conformité basé sur les dates de fin de vie (EOL).
 
 ##  Prérequis
 
-**Systèmes d'exploitation** : Windows Server 2016+, Windows 10/11 ou Ubuntu 18.04+, Debian 10+, CentOS/RHEL 7+[cite: 228, 229].
-**Langage** : Python 3.9 ou supérieur[cite: 229].
+**Systèmes d'exploitation** : Windows Server 2016+, Windows 10/11 ou Ubuntu 18.04+, Debian 10+, CentOS/RHEL 7+.
+**Langage** : Python 3.9 ou supérieur.
 * **Outils tiers** :
-    **Nmap** (optionnel) : Recommandé pour la détection avancée des OS[cite: 229].
-    **MySQL Client** : Requis pour les fonctions de sauvegarde[cite: 230].
+    **Nmap** (optionnel) : Recommandé pour la détection avancée des OS.
+    **MySQL Client** : Requis pour les fonctions de sauvegarde.
 
