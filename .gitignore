@@ -1,4 +1,4 @@
-# Environnement virtuel
+# Environnements virtuels Python
 .venv/
 venv/
 env/
@@ -6,15 +6,13 @@ source/
 
 # Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 
 # Fichiers système
 .DS_Store
 Thumbs.db
 
-# Fichiers d'environnement
+# Variables d'environnement
 .env
 .env.*
 
@@ -29,7 +27,7 @@ backups_/
 .vscode/
 .idea/
 
-# Build / distribution
+# Build
 build/
 dist/
 *.egg-info/
